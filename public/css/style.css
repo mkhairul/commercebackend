@@ -1,0 +1,24 @@
+.status{ margin-top: 10px; }
+#itemform{ visibility: hidden; }
+.item-list .number{ width: 10%; }
+
+.custom-tipster{
+  background: #fff;
+}
+
+.navbar-brand{
+    background: transparent;
+    color: #fff;
+    font-family: 'Source Sans Pro','Segoe UI','Droid Sans',Tahoma,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    text-shadow: 1px 1px 1px #999;
+    width: 200px;
+}
+.eternal{ color: red; }
+
+.loading .modal-body{ font-size: 14px; text-align: center; }
+.categories.typeahead{ margin-bottom: 3px; }
+.images{ margin-bottom: 3px; }
+.image-container .thumb{ height: 100px }
+.image-block{ display: inline-block; margin-right: 2px; margin-bottom: 2px; }
