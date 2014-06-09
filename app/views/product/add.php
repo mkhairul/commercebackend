@@ -80,7 +80,7 @@
                             <label class="col-sm-3 control-label">Images</label>
                             <div class="col-sm-6">
 								<div class="image-container"></div>
-								<input type="file" class="form-control images" name="images" placeholder="">
+								<input type="file" class="form-control images" name="images[]" placeholder="">
 								<!--
 								<input type="text" class="form-control images" name="imageurl[]" placeholder="Image URL">
 								<p class="help-block"><a href="#" class="add-imageurl">Add</a> another image URL</p>
@@ -140,6 +140,7 @@
 					image.data = e.target.result;
 					image.filename = theFile.name
 					image.size = theFile.size
+					console.log(image);
 					$(block).append($('<input>').attr({'type':'hidden', 'name':'images[]'}).val(JSON.stringify(image)))
 					$('.image-container').append(block);
 					$('.images').val("");

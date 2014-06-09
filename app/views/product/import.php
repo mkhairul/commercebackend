@@ -105,7 +105,8 @@
                         qty: 1,
                         'category[]': new Array('standard', set_data['name']),
                         category_details:JSON.stringify(category),
-                        vendor: $('select#vendor').val()
+                        vendor: $('select#vendor').val(),
+                        'images[]': new Array(JSON.stringify({'filename':'', 'data':'http://mtgimage.com/card/'+items[itemno]['imageName']+'.jpg', 'size':'1'}))
                    }
         if ((itemno+1) === items.length) {
             $('#import_btn').removeAttr('disabled');
