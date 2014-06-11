@@ -30,5 +30,7 @@ Route::get('item/categories/{id}', function($id){
     $content = View::make('contents/overview', array('id' => $id));
     return View::make('index', array('content' => $content));
 });
-
+Route::get('settings/currency', function(){
+	return View::make('settings.currency');
+});
 
